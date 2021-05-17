@@ -1,7 +1,8 @@
 [package]
 name = "truncatable"
-version = "0.1.2"
+version = "0.1.3"
 authors = ["Nickolai <nickolaivassiliev@gmail.com>"]
+repository = "https://github.com/Vassili-Dev/rust-truncatable"
 edition = "2018"
 license = "GPL-3.0-only"
 description = "Small crate for truncatable strings"
