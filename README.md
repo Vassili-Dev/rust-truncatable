@@ -10,7 +10,7 @@ Truncatable is a small rust crate for Strings that should append a follower when
 ## Usage
 
 ```
-use truncatable::Trucatable;
+use truncatable::Truncatable;
 let to_truncate = Truncatable::from("Hello World!").truncator("~~".into());
-assert_eq!(to_trucate.truncate(5), String::from("Hello~~"));
+assert_eq!(to_truncate.truncate(5), String::from("Hello~~"));
 ```
