@@ -4,9 +4,9 @@
 //! a follower when truncated (eg, ellipsis)
 //!
 //! ```
-//! use truncatable::Trucatable;
+//! use truncatable::Truncatable;
 //! let to_truncate = Truncatable::from("Hello World!").truncator("~~".into());
-//! assert_eq!(to_trucate.truncate(5), String::from("Hello~~"));
+//! assert_eq!(to_truncate.truncate(5), String::from("Hello~~"));
 //!```
 
 /// Main struct, serves as a String wrapper
