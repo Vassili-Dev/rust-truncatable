@@ -1,5 +1,7 @@
 # Truncatable
 
+![crates.io](https://img.shields.io/crates/v/truncatable.svg)
+
 Truncatable is a small rust crate for Strings that should append a follower when truncated (eg, ellipsis).
 
 ## Usage
