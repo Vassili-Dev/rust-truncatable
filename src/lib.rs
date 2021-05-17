@@ -72,15 +72,13 @@ impl std::fmt::Display for Truncatable {
         if let Some(precision) = f.precision() {
             if precision < self.value.len() {
                 if !self.rtl {
-                    let res = f.pad(self.value.as_str());
-                    write!(f, "{truncator}", truncator = self.truncator)
-                        .expect("Failed to add truncator");
-                    return res;
+                    f.pad(self.value.as_str())?;
+                    write!(f, "{truncator}", truncator = self.truncator)?;
+                    return Ok(());
                 } else {
-                    write!(f, "{truncator}", truncator = self.truncator)
-                        .expect("Failed to add truncator");
-                    let res = f.pad(self.value.as_str());
-                    return res;
+                    write!(f, "{truncator}", truncator = self.truncator)?;
+                    f.pad(self.value.as_str())?;
+                    return Ok(());
                 }
             }
         }
